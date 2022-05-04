@@ -22,8 +22,8 @@ title: Jerome Gill
 email: jerome@jeromegill.com
 description: >- # this means to ignore newlines until "baseurl:"
   A place to dump tips and advice I've given to junior developers and interns and such
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: jeromegill.github.io
+baseurl: "personal-site"
 twitter_username: JeromeGill5
 github_username:  JeromeGill
 
