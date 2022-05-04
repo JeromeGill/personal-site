@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "SRP for easier testing of react components"
+date:   2022-05-04 15:57:12 +0100
+categories: react
+---
+
+When working in react, try to separate presentational from stateful/dynamic components.
+
+You’ll find testing much easier if you find a way to split a component like Todo into something like Todo and TodoContainer.
+
+The TodoContainer can deal with the state, any effects etc. Your unit tests just need to test that it passes props to a Todo correctly.
+
+The Todo displays differently depending on the props you pass in.
+
+Look at the imports for hints that you might benefit from splitting a component. If your component imports useState, useEffect AND a CSS file, or styled components or anything like that it is probably doing too much.
+
+I often look at the imports to get a sense of the responsibility a file has, and too many different kinds of imports suggests too many responsibilities to me! Remember SRP!
